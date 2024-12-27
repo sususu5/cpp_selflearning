@@ -1,4 +1,4 @@
-# Small programs written during the C++ learning
+# Small programs written during my C++ learning
 
 1. SimpleEventSystem
 2. MyString
