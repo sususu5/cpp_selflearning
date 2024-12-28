@@ -47,3 +47,25 @@ class vector {
 2. Monitoring: Call epoll_wait to block the process and wait for events.
 3. Event Return: Only descriptors with state changes are returned, avoiding full set scanning.  
 Since the event table persists in the kernel, the program doesn't need to re-pass the descriptor set each time, making it more efficient.
+
+--- 
+
+## 关于构造函数 (About the Constructor)
+1. 定义有参构造后，系统定义的默认无参构造会失效，如果想继续使用必须自行定义无参构造。  
+***After defining a parameterized constructor, the system-defined default constructor will be disabled. If you want to continue using it, you must define the default constructor manually.***
+2. 如果类中有const或引用成员或不可被拷贝的对象(std::thread)，系统不会生成默认的拷贝构造函数。  
+***If a class has const or reference members or objects that cannot be copied (e.g., std::thread), the system will not generate the default copy constructor.***
+3. class A 是 class B 的成员，构造B时，先构造A再构造B，析构Ｂ时，先析构Ｂ再析构Ａ。  
+***If class A is a member of class B, when constructing B, A is constructed first, followed by B. When destructing B, B is destructed first, followed by A.***
+4. class A 是 class B 的基类，构造B时，先构造A再构造B，析构Ｂ时，先析构Ｂ再析构Ａ。  
+***If class A is a base class of class B, when constructing B, A is constructed first, followed by B. When destructing B, B is destructed first, followed by A.***
+5. 拷贝构造为复制资源，原有资源可以继续使用，移动构造为转移资源的所有权，原有资源会失效。  
+***A copy constructor duplicates resources, allowing the original resources to still be used, while a move constructor transfers the ownership of resources, causing the original resources to become invalid.***
+6. 初始化列表必须拥用于初始化常量成员、引用成员和基类。  
+***Initialization lists must be used to initialize constant members, reference members, and base classes.***
+7. 虚析构函数的作用：通过基类指针删除派生类对象时能正确地调用派生类的析构函数,如果基类不写为虚析构,只有基类会被析构而子类未被析构,从而导致内存泄漏.  
+***The purpose of a virtual destructor: When deleting a derived class object through a base class pointer, it ensures that the destructor of the derived class is called correctly. If the base class destructor is not virtual, only the base class will be destructed, and the derived class will not be, leading to memory leaks.***
+8. 对于全局或静态对象,析构函数按照创建的逆序进行析构.  
+***For global or static objects, destructors are called in the reverse order of their creation.***
+9. RAII是一种C++编程范式,对象的生命周期控制资源的获取和释放，从而确保在对象销毁时自动释放相关资源，避免资源泄漏。  
+***RAII is a C++ programming paradigm where the lifetime of an object controls the acquisition and release of resources, ensuring that resources are automatically released when the object is destroyed, thus preventing resource leaks.***
