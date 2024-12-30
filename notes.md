@@ -69,3 +69,6 @@ Since the event table persists in the kernel, the program doesn't need to re-pas
 ***For global or static objects, destructors are called in the reverse order of their creation.***
 9. RAII是一种C++编程范式,对象的生命周期控制资源的获取和释放，从而确保在对象销毁时自动释放相关资源，避免资源泄漏。  
 ***RAII is a C++ programming paradigm where the lifetime of an object controls the acquisition and release of resources, ensuring that resources are automatically released when the object is destroyed, thus preventing resource leaks.***
+
+--- 
+
