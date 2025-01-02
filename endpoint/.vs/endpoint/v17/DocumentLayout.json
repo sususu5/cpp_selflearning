@@ -22,21 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "endpoints.cpp",
-              "DocumentMoniker": "D:\\projects\\C\u002B\u002B\\cpp_learning\\endpoint\\endpoints.cpp",
-              "RelativeDocumentMoniker": "endpoints.cpp",
-              "ToolTip": "D:\\projects\\C\u002B\u002B\\cpp_learning\\endpoint\\endpoints.cpp",
-              "RelativeToolTip": "endpoints.cpp",
-              "ViewState": "AgIAAHkAAAAAAAAAAADgvzsAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-30T06:57:56.313Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -45,9 +32,26 @@
               "RelativeDocumentMoniker": "endpoint.h",
               "ToolTip": "D:\\projects\\C\u002B\u002B\\cpp_learning\\endpoint\\endpoint.h",
               "RelativeToolTip": "endpoint.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-30T06:53:24.359Z",
+              "WhenOpened": "2025-01-02T02:05:33.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "endpoints.cpp",
+              "DocumentMoniker": "D:\\projects\\C\u002B\u002B\\cpp_learning\\endpoint\\endpoints.cpp",
+              "RelativeDocumentMoniker": "endpoints.cpp",
+              "ToolTip": "D:\\projects\\C\u002B\u002B\\cpp_learning\\endpoint\\endpoints.cpp",
+              "RelativeToolTip": "endpoints.cpp",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAmwCYBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-30T06:57:56.313Z",
               "EditorCaption": ""
             },
             {
